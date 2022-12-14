@@ -1,0 +1,72 @@
+:root{
+    --hue:216;
+    --bg_color:hsl(216 , 100% ,95%);
+    --heading:hsl(216 , 80% ,50%);
+    --color:hsl(216 , 100% ,9%);
+    --color_primary:hsl(216 , 100% ,50%);
+    --color_light_primary:hsl(216 , 100% ,55%);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.darkmode{
+    --bg_color:hsl(216 , 100% ,5%);
+    --heading:hsl(216 , 80% ,55%);
+    --color:hsl(216 , 100% ,90%);
+    --color_primary:hsl(216 , 100% ,55%);
+    --color_light_primary:hsl(216 , 100% ,55%);
+}
+body{
+    background-color: var(--bg_color);
+    color: var(--color);
+}
+h1{
+    color: var(--heading);
+    text-transform: uppercase;
+}
+button{
+    background-color: var(--color_primary);
+    color: #fff;
+    padding: 0.8rem 1rem; 
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--color_light_primary);
+}
+
+
+.butn{
+    position: fixed;
+    width: 40px;
+    height: 15px ;
+    border: 2px solid;
+    margin-top: 50px;
+    margin: auto;
+    border-radius: 10px;
+    top: 5px;
+    right: 30px;
+}
+.c{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    background-color: #fff;
+    /* background-color:var(--color_primary); */
+    background-color: black;
+   
+  
+}
+.t{
+    right: 0px;
+    background-color: #fff;
+
+}

@@ -16,14 +16,21 @@ const text=input.value;
 const newli=`  <span> ${text}</span>
 <div class="btns"><button class="btn done">done</button> <button class="btn remove"> remove</button></div>`
 li.innerHTML=newli
-console.log(li)
-ul.prepend(li);
-li.classList.add('todo-li')
-setInterval(() => {
-  msg.style.display="none"
-}, 3000);
+// console.log(li,"hassan")
+if(`${text}`==""){
 
-msg.style.display="block"
+
+}else{
+
+  ul.prepend(li);
+  li.classList.add('todo-li')
+  setInterval(() => {
+    msg.style.display="none"
+  }, 3000);
+  msg.style.display="block"
+}
+
+
 input.value=""
 })
 
@@ -37,11 +44,13 @@ ul.addEventListener("click",(e)=>{
     const r= e.target.parentNode.parentNode;
     r.remove();
     remove_msg.style.display="block"
+ 
 setInterval(() => {
   remove_msg.style.display="none"
 }, 3000);
 
   }
+
 })
 
 
