@@ -36,17 +36,18 @@ if ((h/30)>12) {
 }, 1000);
 
 const sound=new Audio()
+sound.src="sound/Clock-Ticking-c.mp3"
+sound.play()
+sound.volume=.7
 sound.currentTime=0
-sound.src="sound/Clock-Ticking-C.mp3"
-sound.play();
-sound.volume=1
 
 
 setInterval(() => {
-    // console.log(sound.currentTime)
+    console.log(sound.currentTime)
+    
     if (sound.currentTime>31) {
         sound.currentTime=0
     }
-}, 20000);
+}, 2000);
     
 
