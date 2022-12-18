@@ -2,7 +2,25 @@ const hours=document.querySelector(".c1")
 const min=document.querySelector(".c2")
 const sec=document.querySelector(".c3")
 const ampm=document.querySelector(".ampm")
-console.log(sec)
+// const audio=document.querySelector("audio")
+// let audio=new Audio("sound/Clock-Ticking-C.mp3");
+// console.log(audio)
+// audio.play()
+const sound=new Audio("https://goo.gl/xX8pDD/sound/Clock-Ticking-C.mp3")
+sound.src="sound/Clock-Ticking-c.mp3"
+sound.currentTime=0
+sound.play()
+sound.volume=.7
+ 
+
+setInterval(() => {
+    console.log(sound.currentTime)
+    
+    if (sound.currentTime>31) {
+        sound.currentTime=0
+    }
+}, 2000);
+    
 
 setInterval(() => {
     const time= new Date()
@@ -35,19 +53,5 @@ if ((h/30)>12) {
 
 }, 1000);
 
-const sound=new Audio()
-sound.src="sound/Clock-Ticking-c.mp3"
-sound.play()
-sound.volume=.7
-sound.currentTime=0
 
-
-setInterval(() => {
-    console.log(sound.currentTime)
-    
-    if (sound.currentTime>31) {
-        sound.currentTime=0
-    }
-}, 2000);
-    
 
