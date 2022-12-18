@@ -39,7 +39,7 @@ const sound=new Audio()
 sound.currentTime=0
 sound.src="sound/Clock-Ticking-C.mp3"
 sound.play();
-sound.volume=.4
+sound.volume=1
 
 
 setInterval(() => {
