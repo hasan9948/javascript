@@ -32,4 +32,21 @@ if ( document.querySelector(".dseconds").textContent< 10) {
 if ((h/30)>12) {
     ampm.textContent="pm"
 }
-}, 100);
+
+}, 1000);
+
+const sound=new Audio()
+sound.currentTime=0
+sound.src="sound/Clock-Ticking-C.mp3"
+sound.play();
+sound.volume=.4
+
+
+setInterval(() => {
+    // console.log(sound.currentTime)
+    if (sound.currentTime>31) {
+        sound.currentTime=0
+    }
+}, 20000);
+    
+
