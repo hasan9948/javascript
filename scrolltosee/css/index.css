@@ -1,0 +1,38 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130vh;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-image: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    filter: brightness(50%);
+    background-position:center  ;
+    clip-path :circle( 50px at center) ;
+}
+.title{
+    color: rgb(98, 95, 95);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%);
+font-size: 3rem;
+text-transform: uppercase;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.625), 0 0 10px #000;
+z-index: 2;
+}
+
+.container{
+    position: relative;
+    margin-top: 140vh;
+    z-index: 10;
+    background-color: #fff;
+    padding: 2rem;
+}
