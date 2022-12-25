@@ -1,4 +1,4 @@
-const speed=4
+const speed=10
 let lastrendertime=0
 let snakebody=[{x:10,y:10}]
 let food={x:5,y:6}
@@ -49,7 +49,7 @@ if(gameovergame())
  snakebody=[{x:10,y:10}]
         backgroundmusic.play()
         score=0
-        // scorehtml.innerHTML="score :"+score
+        scorehtml.innerHTML="score :"+score
   
 }
 
