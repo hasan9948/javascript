@@ -11,4 +11,11 @@ digitalclock1:https://hasan9948.github.io/javascript/digitalclock1
 darklightmode:https://hasan9948.github.io/javascript/darklightmode  
 cursor position location:https://hasan9948.github.io/javascript/cursor_position  
 calender:https://hasan9948.github.io/javascript/calender    
-testimonial_slide:https://hasan9948.github.io/javascript/testimonial_slide
+testimonial_slide:https://hasan9948.github.io/javascript/testimonial_slide   
+snakegame1:https://hasan9948.github.io/javascript/snakegame1   
+scrolltosee:https://hasan9948.github.io/javascript/scrolltosee   
+navbar-scrollevent:https://hasan9948.github.io/javascript/navbar-scrollevent   
+imageslider2:https://hasan9948.github.io/javascript/imageslider2    
+imageslider:https://hasan9948.github.io/javascript/imageslider   
+heartpoping:https://hasan9948.github.io/javascript/heartpoping   
+30randomcolorgenerator:https://hasan9948.github.io/javascript/30randomcolorgenerator   
